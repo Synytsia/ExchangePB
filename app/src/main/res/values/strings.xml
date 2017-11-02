@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ExchPB</string>
+    <string-array name="valutaList">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>RUB</item>
+    </string-array>
+    <string name="kurs_usd">Kurs USD</string>
+    <string name="kurs_eur">Kurs EUR</string>
+    <string name="kurs_rub">Kurs RUB</string>
+    <string name="exchange">Exchange</string>
+    <string name="noEditValue">Edit your quantity, please!</string>
+
+
+</resources>

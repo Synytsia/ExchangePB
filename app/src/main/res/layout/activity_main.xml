@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.exchpb.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/kurs_usd"
+            android:id="@+id/idTvKursUSD"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/kurs_eur"
+            android:layout_weight="1"
+            android:id="@+id/idTvKursEUR"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="@string/kurs_rub"
+            android:layout_weight="1"
+            android:id="@+id/idTvKursRUB"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/idEt"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/idSpinner"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/valutaList">
+
+        </Spinner>
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/idTvResult"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="onExchange"
+        android:text="@string/exchange" />
+
+</LinearLayout>
